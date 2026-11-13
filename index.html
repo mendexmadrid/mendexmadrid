@@ -2,9 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera web en GitHub Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendex Madrid</title>
+    <!-- Esta etiqueta hace la redirección instantánea -->
+    <meta http-equiv="refresh" content="0; url=https://mendexmadrid.my.canva.site/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .loader {
+            border: 5px solid #e0e0e0;
+            border-top: 5px solid #7b2cbf;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola mundo! Mi sitio web ya está en línea 🚀</h1>
+    <div class="loader"></div>
+    <script>
+        // Redirección de respaldo por si el navegador ignora la etiqueta meta
+        window.location.href = "https://mendexmadrid.my.canva.site/";
+    </script>
 </body>
 </html>
